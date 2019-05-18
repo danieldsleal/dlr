@@ -2,8 +2,8 @@
 
 <?php
 
-    if(isset($_POST['ok'])){
-        send_data($_POST['ok']);
+    if(isset($_POST['ok'])&& isset($_POST['ok2'])){
+        send_data($_POST['ok'], $_POST['ok2']);
     }
 
 ?>

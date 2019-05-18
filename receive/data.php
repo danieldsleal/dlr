@@ -2,12 +2,12 @@
 
 <?php
 
-    function send_data($voltage){
+    function send_data($voltage, $current){
 
         $query = "INSERT INTO cell(voltage,current,anode_temp,cathode_temp,latitude, longitude)
                     VALUES(?,?,?,?,?,?)";
         
-        $values = array($voltage, $voltage, $voltage, $voltage, $voltage, $voltage);
+        $values = array($voltage, $current, $voltage, $voltage, $voltage, $voltage);
 
         db();
         global $conn;
