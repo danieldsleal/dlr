@@ -53,21 +53,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                <p style="text-align: center ; padding-left: 65px ; padding-right: 65px">
-                    The main motivation of this dissertation is to test this fuel cell in comparison to 
-                    a normal electric bicycle and evaluate its performance and degradation and to develop 
-                    a small data acquisition unit to gather performance data of this new fuel cell. 
-                    s
-                    d
-                    f
-                    r
-                    <br>
-                    <br>
+                <p style="text-align: justify ; padding-left: 65px ; padding-right: 65px">
+                    The goal of this master thesis is to analyze different load cycles that 
+                    simulate real driving profiles and study the performance and degradation 
+                    of the cell along time. To study this, Ex-Situ and In-situ characterization 
+                    of the cell will be made. In-situ techniques will be based on Cyclic Voltammetry (CV) 
+                    and Electrochemical Impedance spectroscopy (EIS). To evaluate the changes on the 
+                    surface of different parts of the cell and assess its degradation, Ex-Situ analysis 
+                    will be performed using scanning electron microscopy (SEM) and X-ray photoelectron 
+                    spectroscopy (XPS). Additionally a data acquisition unit will be developed to gather 
+                    real-time information of the testing station. 
                     <br>
                     <br>
                     This project was develop at DLR (Deutsches Zentrum für Luft- und Raumfahrt) meaning that everything displayed 
                     here is owned by them. This project is part of my master thesis in electrical engineering from Porto University.
-                
+                    <br>
+                    <br>
                 </p>
                  </div>
             </div>
