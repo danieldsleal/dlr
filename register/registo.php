@@ -6,15 +6,17 @@
 			//$password = htmlentities($_POST['email']);
 			//$email = htmlentities($_POST['password']);
 
-            //if (check_username($_POST['fusername']) == 1){
+            if (check_username($_POST['fusername']) == 0){
 				addUser($_POST['fusername'],$_POST['femail'],$_POST['fpassword'],$_POST['fname']);
 				$message = array('status' => 'ok');
-				//header ("LOCATION: /dlr/login/index.php");
-			//}
+				header ("LOCATION: /login/index.php");
+			}
 			
-			
-			
-		} else $message = array('status' => 'not_ok');
+			else{
+				$message = array('status' => 'not_ok');
+				header ("LOCATION: /index.php");
+			}	
+		} 
 
-		header ("LOCATION: /index.php");
+		
 ?>

@@ -6,19 +6,19 @@
         db();
         global $conn;
 
-        $aux = array($login);
-
         $query = "SELECT username
                   FROM users
                   WHERE username = ?";
         
         $result = $conn->prepare($query);
 		$result->bind_param('s', $login);
-		$result->execute();
-        if (mysqli_num_rows($result)==0){
-            return 0;
+        $result->execute();
+        $result->bind_result();
+        $row_count = $result->fetch();
+        if ($row_count == 1){
+            return 1;
         }
-        return 1;
+        else return 0;
     }
 
 

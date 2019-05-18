@@ -69,7 +69,7 @@
                             <div class="register-link">
                                 <p>
                                     Don't you have account?
-                                    <a href="../register/index.php">Sign Up Here</a>
+                                    <a href="/register/index.php">Sign Up Here</a>
                                 </p>
                             </div>
                         </div>
