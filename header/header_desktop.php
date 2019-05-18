@@ -52,7 +52,7 @@
                 <div class="account-wrap">
                     <div class="account-item account-item--style2 clearfix js-item-menu">
                         <div class="image">
-                            <img src="/dlr/images/icon/daniel.jpg" alt="John Doe" />
+                            <img src="images/icon/daniel.jpg" alt="John Doe" />
                         </div>
                         <div class="content">
                             <a class="js-acc-btn" href="#"><?=$user_data['complete_name']?></a>
@@ -61,7 +61,7 @@
                             <div class="info clearfix">
                                 <div class="image">
                                     <a href="#">
-                                        <img src="/dlr/images/icon/daniel.jpg" alt="John Doe" />
+                                        <img src="images/icon/daniel.jpg" alt="John Doe" />
                                     </a>
                                 </div>
                                 <div class="content">
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="account-dropdown__footer">
-                                <a href="/dlr/logout.php">
+                                <a href="logout.php">
                                     <i class="zmdi zmdi-power"></i>Logout</a>
                             </div>
                             </div>
@@ -104,12 +104,12 @@
                         
                         <div class="account-dropdown__body">
                             <div class="account-dropdown__item">
-                                <a href="/dlr/login/index.php">
+                                <a href="login/index.php">
                                     <i class="zmdi zmdi-account"></i>Login</a>
                             </div>
 
                             <div class="account-dropdown__item">
-                                <a href="/dlr/register/index.php">
+                                <a href="register/index.php">
                                     <i class="zmdi zmdi-account"></i>Register</a>
                             </div>
                             
