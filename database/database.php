@@ -1,8 +1,8 @@
 ﻿<?php
 	function db(){
-		$servername = "remotemysql.com";
-		$username = "r5oYrtnEzS";
-		$password = "BeEh9AJdfC";
+		$servername = "fcrex.mysql.database.azure.com";
+		$username = "daniel@fcrex";
+		$password = "Ahzoo4wi";
 		global $conn;
 
 		// Create connection
@@ -14,7 +14,7 @@
 		}
 
 		//echo "Connection Ok";
-		//$conn->select_db("dlr");
+		$conn->select_db("dlr");
 	}
 ?>
 
