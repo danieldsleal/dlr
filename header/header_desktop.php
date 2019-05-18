@@ -15,7 +15,7 @@
                 <div class="header__navbar">
                     <ul class="list-unstyled">
                         <li class="has-sub">
-                            <a href="/dlr/realdata/index.php">
+                            <a href="realdata/index.php">
                                 <i class="fas fa-motorcycle"></i>Real Data
                                 <span class="bot-line"></span>
                             </a>
@@ -28,7 +28,7 @@
                         </li>
 
                         <li>
-                            <a href="/dlr/about/index.php">
+                            <a href="about/index.php">
                             <i class="fas fa-question"></i>
                             <span class="bot-line"></span>About</a>
                         </li>

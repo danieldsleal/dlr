@@ -16,5 +16,5 @@
 			
 		} else $message = array('status' => 'not_ok');
 
-		header ("LOCATION: /dlr/index.php");
+		header ("LOCATION: /index.php");
 ?>
