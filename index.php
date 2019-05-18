@@ -80,10 +80,10 @@
 
             </div>
             <div class="col-lg">
-            <img class="thumbnail img-responsive" src="/dlr/images/dlr.png" width= 100%>
+            <img class="thumbnail img-responsive" src="images/dlr.png" width= 100%>
             </div>
             <div class="col-lg">
-            <img src="/dlr/images/feup.png" class="rounded" width= 100%>
+            <img src="images/feup.png" class="rounded" width= 100%>
             </div>
             <div class="col-lg">
             </div>
