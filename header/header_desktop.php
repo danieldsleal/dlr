@@ -5,7 +5,7 @@
         <div class="header3-wrap">
             <div class="header__logo">
                 <a href="#">
-                    <img src="images/dlr_logo_inv.png" width=50 height=50 alt="CoolAdmin" /><font color="white">&nbsp;Fuel Cell Cargo Pedelecs</font>
+                    <img src="/images/dlr_logo_inv.png" width=50 height=50 alt="CoolAdmin" /><font color="white">&nbsp;Fuel Cell Cargo Pedelecs</font>
                 </a>
             </div>
 
@@ -15,7 +15,7 @@
                 <div class="header__navbar">
                     <ul class="list-unstyled">
                         <li class="has-sub">
-                            <a href="realdata/index.php">
+                            <a href="/realdata/index.php">
                                 <i class="fas fa-motorcycle"></i>Real Data
                                 <span class="bot-line"></span>
                             </a>
@@ -28,7 +28,7 @@
                         </li>
 
                         <li>
-                            <a href="../about/index.php">
+                            <a href="/about/index.php">
                             <i class="fas fa-question"></i>
                             <span class="bot-line"></span>About</a>
                         </li>
@@ -52,7 +52,7 @@
                 <div class="account-wrap">
                     <div class="account-item account-item--style2 clearfix js-item-menu">
                         <div class="image">
-                            <img src="images/icon/daniel.jpg" alt="John Doe" />
+                            <img src="/images/icon/daniel.jpg" alt="John Doe" />
                         </div>
                         <div class="content">
                             <a class="js-acc-btn" href="#"><?=$user_data['complete_name']?></a>

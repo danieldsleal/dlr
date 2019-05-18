@@ -30,7 +30,7 @@
     <!-- Main CSS-->
     <link href="../css/theme.css" rel="stylesheet" media="all">
     <!-- Jquery shit!!!!!-->
-    <script src="/dlr/jquery/jquery.js"></script>
+    <script src="/jquery/jquery.js"></script>
 
 </head>
 
@@ -44,7 +44,7 @@ session_start();
 
 <body>
 
-<script type="text/javascript" scr ="../jquery/jquery.js"></script>
+<script type="text/javascript" scr ="/jquery/jquery.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
 
