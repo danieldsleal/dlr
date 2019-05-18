@@ -1,8 +1,14 @@
 <?php
 
+<<<<<<< HEAD
 $servername = "fcrex.mysql.database.azure.com";
 $username = "daniel@fcrex";
 $password = "Ahzoo4wi";
+=======
+$servername = "localhost:3306";
+$username = "root";
+$password = "";
+>>>>>>> origin/master
 global $conn;
 
 // Create connection

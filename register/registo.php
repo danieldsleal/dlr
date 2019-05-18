@@ -6,11 +6,19 @@
 			//$password = htmlentities($_POST['email']);
 			//$email = htmlentities($_POST['password']);
 
+<<<<<<< HEAD
             //if (check_username($_POST['fusername']) == 1){
 				addUser($_POST['fusername'],$_POST['femail'],$_POST['fpassword'],$_POST['fname']);
 				$message = array('status' => 'ok');
 				//header ("LOCATION: /dlr/login/index.php");
 			//}
+=======
+            if (check_username($_POST['fusername']) == 1){
+				addUser($_POST['fusername'],$_POST['femail'],$_POST['fpassword'],$_POST['fname']);
+				$message = array('status' => 'ok');
+				header ("LOCATION: /dlr/login/index.php");
+			}
+>>>>>>> origin/master
 			
 			
 			
