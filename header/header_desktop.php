@@ -5,7 +5,7 @@
         <div class="header3-wrap">
             <div class="header__logo">
                 <a href="#">
-                    <img src="/dlr/images/dlr_logo_inv.png" width=50 height=50 alt="CoolAdmin" /><font color="white">&nbsp;Fuel Cell Cargo Pedelecs</font>
+                    <img src="../dlr/images/dlr_logo_inv.png" width=50 height=50 alt="CoolAdmin" /><font color="white">&nbsp;Fuel Cell Cargo Pedelecs</font>
                 </a>
             </div>
 
