@@ -28,7 +28,7 @@
                         </li>
 
                         <li>
-                            <a href="about/index.php">
+                            <a href="../about/index.php">
                             <i class="fas fa-question"></i>
                             <span class="bot-line"></span>About</a>
                         </li>

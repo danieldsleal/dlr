@@ -44,7 +44,7 @@ session_start();
 
 <body>
 
-<script type="text/javascript" scr ="/dlr/jquery/jquery.js"></script>
+<script type="text/javascript" scr ="../jquery/jquery.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
 
