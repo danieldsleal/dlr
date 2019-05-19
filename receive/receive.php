@@ -2,8 +2,8 @@
 
 <?php
 
-    if(isset($_POST['ok'])&& isset($_POST['ok2'])){
-        send_data($_POST['ok'], $_POST['ok2']);
+    if(isset($_POST['voltage'])&& isset($_POST['current'])){
+        send_data($_POST['voltage'], $_POST['current']);
     }
 
 ?>
