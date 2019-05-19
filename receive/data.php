@@ -7,7 +7,9 @@
         $query = "INSERT INTO cell(voltage,current,anode_temp,cathode_temp,latitude, longitude)
                     VALUES(?,?,?,?,?,?)";
         
-        $values = array($voltage, $current, $voltage, $voltage, $voltage, $voltage);
+        $latitude = 48.749210; 
+        $longitude =  9.101478
+        $values = array($voltage, $current, $voltage, $voltage, $latitude, $longitude);
 
         db();
         global $conn;
