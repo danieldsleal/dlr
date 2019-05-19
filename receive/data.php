@@ -8,7 +8,7 @@
                     VALUES(?,?,?,?,?,?)";
         
         $latitude = 48.749210; 
-        $longitude =  9.101478
+        $longitude =  9.101478;
         $values = array($voltage, $current, $voltage, $voltage, $latitude, $longitude);
 
         db();
