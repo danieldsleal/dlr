@@ -22,7 +22,7 @@
                         </li>
                     
                         <li>
-                            <a href="#">
+                            <a href="/performance.php">
                             <i class="fas fa-chart-line"></i>
                                 <span class="bot-line"></span>Performance</a>
                         </li>
@@ -34,17 +34,9 @@
                         </li>
                     
                         <li class="has-sub">
-                            <a href="#">
-                                <i class="fas fa-desktop"></i>
-                                <span class="bot-line"></span>UI Elements</a>
-                            <ul class="header3-sub-list list-unstyled">
-                                <li>
-                                    <a href="button.html">Button</a>
-                                </li>
-                                <li>
-                                    <a href="badge.html">Badges</a>
-                                </li>
-                            </ul>
+                            <a href="/faq.php">
+                                <i class="fas fa-question"></i>
+                                <span class="bot-line"></span>FAQ</a>
                         </li>
                     </ul>
                  </div>
