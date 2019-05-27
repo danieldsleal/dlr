@@ -48,11 +48,9 @@
 
 <body class="animsition">
     <div class="page-wrapper">
-        <div class="page-content--bgf7">
             <section class="p-t-60 p-b-20">
-                <canvas id="fuelcell" width="600" height="600"></canvas>
+                <canvas id="fuelcell" width="600" height="2000"></canvas>
             </section>
-        </div>
     </div>
 </body>
 

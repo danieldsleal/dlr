@@ -16,6 +16,10 @@
         voltage.reverse();
         current.reverse();
         temperature.reverse();
+        var voltagecolor = "rgb(34, 139, 34)"
+        var temperaturecolor = "rgb(204,204,0)"
+        var currentcolor = "rgb(199,21,133)"
+
 
         var ctx = document.getElementById("fuelcell");
         if (ctx) {
@@ -25,38 +29,101 @@
             data: {
               labels: ["10", "20", "30", "40", "50", "60", "70", "80", "90","100"],
               defaultFontFamily: "Poppins",
+              
               datasets: [
                 {
                   label: "Voltage",
-                  borderColor: "rgb(34,139,34)",
+                  borderColor: voltagecolor,
+                  backgroundColor: voltagecolor,
                   borderWidth: "3",
                   fill: "false",
+                  yAxisID: "A",
+                  
                   data: voltage
                 },
                 {
                   label: "Current",
-                  borderColor: "rgb(199,21,133)",
+                  borderColor: currentcolor,
+                  backgroundColor: currentcolor,
                   borderWidth: "3",
                   fill: "false",
+                  yAxisID: "B",
                   data: current
                 },
                 {
                   label: "Cell Temperature",
-                  borderColor: "rgb(204,204,0)",
+                  borderColor: temperaturecolor,
+                  backgroundColor: temperaturecolor,
                   borderWidth: "3",
                   fill: "false",
+                  yAxisID: "C",
                   data: temperature
-                },
+                }
               ]
             },
+
             options: {
+              scales: {
+                yAxes: [{
+                  id: "A",
+                  type: "linear",
+                  position: "right",
+                  scaleLabel: {
+                    labelString: "Cell Voltage / mV",
+                    display: 'true',
+                    fontStyle: 'bold',
+                    fontColor: voltagecolor,
+                  },
+                  ticks: {
+                    max: 1000,
+                    min: 0,
+                    fontColor: voltagecolor,
+                    fontStyle: 'bold'
+                  }
+              },{
+                  id: "B",
+                  type: "linear",
+                  position: "left",
+                  scaleLabel: {
+                    labelString: "Current / A",
+                    display: true,
+                    fontStyle: 'bold',
+                    fontColor: currentcolor,
+                    fontSize : 13,
+                  },
+                  ticks: {
+                    max: 100,
+                    min: 0
+                  }
+                },
+                {
+                  id: "C",
+                  display: true,
+                  gridLines: {display: false,color: 'transparent'},
+                  ticks: {display: false},
+                  scaleLabel : {
+                    display : true,
+                    labelString : "Temperature / ºC",
+                    fontStyle : 'bold',
+                    fontSize : 13,
+                    fontColor: temperaturecolor
+                  }
+                }
+              ]
+              },
               legend: {
-                position: 'top',
+                position: "top",
                 labels: {
-                  fontFamily: 'Poppins'
+                  fontFamily: "Poppins" 
                 }
     
               },
+              title: {
+                display: true,
+                text: 'Fuel Cell Test Bench Monitoring',
+                fontSize: 24
+              },
+
               responsive: true,
               tooltips: {
                 mode: 'index',
@@ -66,22 +133,7 @@
                 mode: 'nearest',
                 intersect: true
               },
-              scales: {
-                xAxes: [{
-                  ticks: {
-                    fontFamily: "Poppins"
-    
-                  }
-                }],
-                yAxes: [{
-                  ticks: {
-                    beginAtZero: true,
-                    fontFamily: "Poppins"
-                  }
-                }]
-              }
-    
-            }
+            },
           });
         }
         setInterval(function(){
@@ -94,9 +146,8 @@
           current.shift();
           current.splice(retirar,0,data.current);
           temperature.shift();
-          temperature.splice(retirar,0,data.temperature);
+          temperature.splice(retirar,0,data.anode_temp);
           myChart.update();
-          console.log(voltage);
         });
         }, 10000);
       
