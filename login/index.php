@@ -55,6 +55,7 @@
                                     <label>Password</label>
                                     <input class="au-input au-input--full" type="password" name="fpassword" placeholder="Password" required>
                                 </div>
+                                <span id="login_failed"></span>
                                 <div class="login-checkbox">
                                     <label>
                                         <input type="checkbox" name="remember">Remember Me

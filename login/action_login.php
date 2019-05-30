@@ -22,7 +22,7 @@
         //echo($id);
         if ($id != NULL) {
             $message = array('status' => 'ok');
-            echo "LOGIN";
+           
         }
 
 	    else {
