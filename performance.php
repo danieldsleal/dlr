@@ -47,11 +47,24 @@
 ?>
 
 <body class="animsition">
+<?php if (isset($_SESSION["user_id"])) { ?>
     <div class="page-wrapper">
-            <section class="p-t-60 p-b-20">
-                <canvas id="fuelcell" width="600" height="2000"></canvas>
-            </section>
+        <section class="p-t-60 p-b-20">
+      
+               
+                   
+                        <canvas id="fuelcell" width="400" height="400"></canvas>
+                        <center>
+                            <input id="1minute" type="button" class="btn btn-secondary btn-sm" value="1 minute" onclick="doFunction();" /> 
+                            <input id="5minutes" type="button" class="btn btn-secondary btn-sm" value="5 minutes" onclick="doFunction();" /> 
+                            <input id="10minutes" type="button" class="btn btn-secondary btn-sm" value="10 minutes" onclick="doFunction();" /> 
+                        </center>
+                        
+            
+
+        </section>
     </div>
+    <?php } ?>
 </body>
 
 

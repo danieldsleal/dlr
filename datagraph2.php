@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 $servername = "fcrex.mysql.database.azure.com";
 $username = "daniel@fcrex";

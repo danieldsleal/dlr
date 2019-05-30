@@ -21,7 +21,7 @@ global $conn;
 $query = "SELECT voltage, current, anode_temp
             FROM cell
             ORDER BY ID DESC
-            LIMIT 10";
+            LIMIT 61";
 
 $result = $conn->query($query);
 $row[] = $result->fetch_assoc();

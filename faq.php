@@ -44,55 +44,29 @@
 ?>
 
 <body class="animsition">
-    <div class="page-wrapper">
-        
-        <!-- PAGE CONTENT-->
-        <div class="page-content--bgf7">
+    
+  <!-- Collapse buttons -->
+<div>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+    aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+</div>
+<!-- / Collapse buttons -->
 
-    <section class="p-t-60 p-b-20">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p style="text-align: justify ; padding-left: 65px ; padding-right: 65px">
-                        <div id="accordion">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What is a fuel cell?
-                                    </button>
-                                </div>
+<!-- Collapsible element -->
+<div class="collapse" id="collapseExample">
+  <div class="mt-3">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+    keffiyeh helvetica,
+    craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
 
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                    <div class="card-body">
-                                        dsddsdssddsddsds
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- COPYRIGHT-->
-    <section class="p-t-60 p-b-20">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright">
-                        <p>© Daniel José Damas da Silva Leal, 2019</p>
-                        <p>Copyright © 2018 Colorlib. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
-<!-- END COPYRIGHT-->
-
-        </div> 
-
-    </div>
+  
 
 </body>
 
@@ -120,6 +94,7 @@
 
 <!-- Main JS-->
 <script src="js/main.js"></script>
+<script scr="jquery/jquery.js"></script>
 
 
 </html>

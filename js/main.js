@@ -16,18 +16,104 @@
         voltage.reverse();
         current.reverse();
         temperature.reverse();
+
+        let voltage1 = voltage.slice(54,61);
+        let current1 = current.slice(54,61);
+        let temperature1 = temperature.slice(54,61);
+        let voltage5 = voltage.slice(30,61);
+        let current5 = current.slice(30,61);
+        let temperature5 = temperature.slice(30,61);
+        let voltage10 = voltage;
+        let current10= current;
+        let temperature10 = temperature;
+        
+        var time = Array(6);
+        var time5 = Array(31);
+        var time10 = Array(61);
+     
         var voltagecolor = "rgb(34, 139, 34)"
         var temperaturecolor = "rgb(204,204,0)"
         var currentcolor = "rgb(199,21,133)"
+      
+        var d = new Date(); // variables to have the previous hours. JS has some limitations regarding the time, so this a good way to do it,
+        
+        var date10SecondsAgo = new Date(d.getTime() - 10*1000);
+        var date20SecondsAgo = new Date(d.getTime() - 20*1000);
+        var date30SecondsAgo = new Date(d.getTime() - 30*1000);
+        var date40SecondsAgo = new Date(d.getTime() - 40*1000);
+        var date50SecondsAgo = new Date(d.getTime() - 50*1000);
+        var date1MinuteAgo = new Date(d.getTime() - 60*1000);
+        var date1M30SAgo = new Date(d.getTime() - 90*1000);
+        var date2MinutesAgo = new Date(d.getTime() - 120*1000);
+        var date2M30SAgo = new Date(d.getTime() - 150*1000);
+        var date3MinutesAgo = new Date(d.getTime() - 180*1000);
+        var date3M30SAgo = new Date(d.getTime() - 210*1000);
+        var date4MinutesAgo = new Date(d.getTime() - 240*1000);
+        var date4M30SAgo = new Date(d.getTime() - 270*1000);
+        var date5MinutesAgo = new Date(d.getTime() - 300*1000);
+        var date5M30SAgo = new Date(d.getTime() - 330*1000);
+        var date6MinutesAgo = new Date(d.getTime() - 360*1000);
+        var date6M30SAgo = new Date(d.getTime() - 390*1000);
+        var date7MinutesAgo = new Date(d.getTime() - 420*1000);
+        var date7M30SAgo = new Date(d.getTime() - 450*1000);
+        var date8MinutesAgo = new Date(d.getTime() - 480*1000);
+        var date8M30SAgo = new Date(d.getTime() - 510*1000);
+        var date9MinutesAgo = new Date(d.getTime() - 540*1000);
+        var date9M30SAgo = new Date(d.getTime() - 570*1000);
+        var date10MinutesAgo = new Date(d.getTime() - 600*1000);
 
+        var time = [d.getHours()+':'+date1MinuteAgo.getMinutes()+':'+ d.getSeconds() ,
+                    d.getHours()+':'+d.getMinutes()+':'+ date50SecondsAgo.getSeconds(),
+                    d.getHours()+':'+d.getMinutes()+':'+ date40SecondsAgo.getSeconds(),
+                    d.getHours()+':'+d.getMinutes()+':'+ date30SecondsAgo.getSeconds(),
+                    d.getHours()+':'+d.getMinutes()+':'+ date20SecondsAgo.getSeconds(),
+                    d.getHours()+':'+d.getMinutes()+':'+ date10SecondsAgo.getSeconds(),
+                    d.getHours()+':'+d.getMinutes()+':'+ d.getSeconds()]
+
+        var time5 = [d.getHours()+':'+date5MinutesAgo.getMinutes()+':'+ date5MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date4M30SAgo.getMinutes()+':'+ date4M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date4MinutesAgo.getMinutes()+':'+ date4MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date3M30SAgo.getMinutes()+':'+ date3M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date3MinutesAgo.getMinutes()+':'+ date3MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date2M30SAgo.getMinutes()+':'+ date2M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date2MinutesAgo.getMinutes()+':'+ d.getSeconds(),'','',
+                    d.getHours()+':'+date1M30SAgo.getMinutes()+':'+ date1M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date1MinuteAgo.getMinutes()+':'+ date1MinuteAgo.getSeconds(),'','',
+                    d.getHours()+':'+d.getMinutes()+':'+ date30SecondsAgo.getSeconds(),'','',
+                    d.getHours()+':'+d.getMinutes()+':'+ d.getSeconds()
+                    ];
+          
+
+        var time10 = [ d.getHours()+':'+date10MinutesAgo.getMinutes()+':'+ date10MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date9M30SAgo.getMinutes()+':'+ date9M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date9MinutesAgo.getMinutes()+':'+ date9MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date8M30SAgo.getMinutes()+':'+ date8M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date8MinutesAgo.getMinutes()+':'+ date8MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date7M30SAgo.getMinutes()+':'+ date7M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date7MinutesAgo.getMinutes()+':'+ date7MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date6M30SAgo.getMinutes()+':'+ date6M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date6MinutesAgo.getMinutes()+':'+ date6MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date5M30SAgo.getMinutes()+':'+ date5M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date5MinutesAgo.getMinutes()+':'+ date5MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date4M30SAgo.getMinutes()+':'+ date4M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date4MinutesAgo.getMinutes()+':'+ date4MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date3M30SAgo.getMinutes()+':'+ date3M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date3MinutesAgo.getMinutes()+':'+ date3MinutesAgo.getSeconds(),'','',
+                    d.getHours()+':'+date2M30SAgo.getMinutes()+':'+ date2M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date2MinutesAgo.getMinutes()+':'+ d.getSeconds(),'','',
+                    d.getHours()+':'+date1M30SAgo.getMinutes()+':'+ date1M30SAgo.getSeconds(),'','',
+                    d.getHours()+':'+date1MinuteAgo.getMinutes()+':'+ date1MinuteAgo.getSeconds(),'','',
+                    d.getHours()+':'+d.getMinutes()+':'+ date30SecondsAgo.getSeconds(),'','',
+                    d.getHours()+':'+d.getMinutes()+':'+ d.getSeconds()
+                    ];
 
         var ctx = document.getElementById("fuelcell");
         if (ctx) {
           ctx.height = 150;
-          var myChart = new Chart(ctx, {
+          var config = {
             type: 'line',
             data: {
-              labels: ["10", "20", "30", "40", "50", "60", "70", "80", "90","100"],
+              labels: time,
               defaultFontFamily: "Poppins",
               
               datasets: [
@@ -38,8 +124,7 @@
                   borderWidth: "3",
                   fill: "false",
                   yAxisID: "A",
-                  
-                  data: voltage
+                  data: voltage1
                 },
                 {
                   label: "Current",
@@ -48,7 +133,7 @@
                   borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
-                  data: current
+                  data: current1
                 },
                 {
                   label: "Cell Temperature",
@@ -57,7 +142,7 @@
                   borderWidth: "3",
                   fill: "false",
                   yAxisID: "C",
-                  data: temperature
+                  data: temperature1
                 }
               ]
             },
@@ -72,13 +157,15 @@
                     labelString: "Cell Voltage / mV",
                     display: 'true',
                     fontStyle: 'bold',
+                    fontSize: 15,
                     fontColor: voltagecolor,
                   },
                   ticks: {
                     max: 1000,
                     min: 0,
                     fontColor: voltagecolor,
-                    fontStyle: 'bold'
+                    fontStyle: 'bold',
+                    fontSize: 12
                   }
               },{
                   id: "B",
@@ -89,11 +176,12 @@
                     display: true,
                     fontStyle: 'bold',
                     fontColor: currentcolor,
-                    fontSize : 13,
+                    fontSize : 15,
                   },
                   ticks: {
                     max: 100,
-                    min: 0
+                    min: 0,
+                    fontSize: 12
                   }
                 },
                 {
@@ -105,14 +193,28 @@
                     display : true,
                     labelString : "Temperature / ºC",
                     fontStyle : 'bold',
-                    fontSize : 13,
+                    fontSize :    15,
                     fontColor: temperaturecolor
+                  },
+                  ticks: {
+                    display: false,
+                    max: 100,
+                    min: 0,
                   }
                 }
-              ]
+              ],
+
+              xAxes: [{
+                scaleLabel : {
+                  display: true,
+                  labelString: "Time [HH:MM:SS]",
+                  fontStyle: "bold",
+                  fontSize: 20
+                }
+              }]
               },
               legend: {
-                position: "top",
+                position: "bottom",
                 labels: {
                   fontFamily: "Poppins" 
                 }
@@ -123,7 +225,7 @@
                 text: 'Fuel Cell Test Bench Monitoring',
                 fontSize: 24
               },
-
+              maintainAspectRatio: true,
               responsive: true,
               tooltips: {
                 mode: 'index',
@@ -133,29 +235,149 @@
                 mode: 'nearest',
                 intersect: true
               },
+              elements: { 
+                line: {
+                    tension: 0 // Draw straightline instead of a curve
+                }
+              },
             },
-          });
+          }
         }
+        var myChart = new Chart(ctx,config);
+
+        document.getElementById("1minute").onclick = function(){
+          var data = myChart.config.data;
+          
+          data.labels = time;
+          data.datasets[0].data = voltage1;
+          data.datasets[1].data = current1;
+          data.datasets[2].data = temperature1;
+          myChart.update();
+        };
+
+        document.getElementById("5minutes").onclick = function(){
+          var data = myChart.config.data;
+          
+          data.labels = time5;
+          data.datasets[0].data = voltage5;
+          data.datasets[1].data = current5;
+          data.datasets[2].data = temperature5;
+          myChart.update();
+        };
+
+        document.getElementById("10minutes").onclick = function(){
+          var data = myChart.config.data;
+      
+          data.labels = time10;
+          data.datasets[0].data = voltage10;
+          data.datasets[1].data = current10;
+          data.datasets[2].data = temperature10;
+          myChart.update();
+        };
+
         setInterval(function(){
           $.getJSON("../datagraph2.php", (data) => {
           
-          var retirar = 10;
-          //takes the first element out of the array and puts a new one in the end, and refreshes every 10 seconds the graph
-          voltage.shift(); 
-          voltage.splice(retirar,0,data.voltage);
-          current.shift();
-          current.splice(retirar,0,data.current);
-          temperature.shift();
-          temperature.splice(retirar,0,data.anode_temp);
+          d = new Date();
+          date10SecondsAgo = new Date(d.getTime() - 10*1000);
+          date20SecondsAgo = new Date(d.getTime() - 20*1000);
+          date30SecondsAgo = new Date(d.getTime() - 30*1000);
+          date40SecondsAgo = new Date(d.getTime() - 40*1000);
+          date50SecondsAgo = new Date(d.getTime() - 50*1000);
+          var date1MinuteAgo = new Date(d.getTime() - 60*1000);
+          var date1M30SAgo = new Date(d.getTime() - 90*1000);
+          var date2MinutesAgo = new Date(d.getTime() - 120*1000);
+          var date2M30SAgo = new Date(d.getTime() - 150*1000);
+          var date3MinutesAgo = new Date(d.getTime() - 180*1000);
+          var date3M30SAgo = new Date(d.getTime() - 210*1000);
+          var date4MinutesAgo = new Date(d.getTime() - 240*1000);
+          var date4M30SAgo = new Date(d.getTime() - 270*1000);
+          var date5MinutesAgo = new Date(d.getTime() - 300*1000);
+          var date5M30SAgo = new Date(d.getTime() - 330*1000);
+          var date6MinutesAgo = new Date(d.getTime() - 360*1000);
+          var date6M30SAgo = new Date(d.getTime() - 390*1000);
+          var date7MinutesAgo = new Date(d.getTime() - 420*1000);
+          var date7M30SAgo = new Date(d.getTime() - 450*1000);
+          var date8MinutesAgo = new Date(d.getTime() - 480*1000);
+          var date8M30SAgo = new Date(d.getTime() - 510*1000);
+          var date0MinutesAgo = new Date(d.getTime() - 540*1000);
+          var date9M30SAgo = new Date(d.getTime() - 570*1000);
+          var date10MinutesAgo = new Date(d.getTime() - 600*1000);
+          
+
+          time[0] = d.getHours()+':'+d.getMinutes()+':'+ date1MinuteAgo.getSeconds();
+          time[1] = d.getHours()+':'+d.getMinutes()+':'+ date50SecondsAgo.getSeconds();
+          time[2] = d.getHours()+':'+d.getMinutes()+':'+ date40SecondsAgo.getSeconds();
+          time[3] = d.getHours()+':'+d.getMinutes()+':'+ date30SecondsAgo.getSeconds();
+          time[4] = d.getHours()+':'+d.getMinutes()+':'+ date20SecondsAgo.getSeconds();
+          time[5] = d.getHours()+':'+d.getMinutes()+':'+ date10SecondsAgo.getSeconds();
+          time[6] = d.getHours()+':'+d.getMinutes()+':'+ d.getSeconds();
+
+          time5[0] = d.getHours()+':'+date5MinutesAgo.getMinutes()+':'+ date5MinutesAgo.getSeconds();
+          time5[3] = d.getHours()+':'+date4M30SAgo.getMinutes()+':'+ date4M30SAgo.getSeconds(),'','',
+          time5[6] = d.getHours()+':'+date4MinutesAgo.getMinutes()+':'+ date4MinutesAgo.getSeconds(),'','',
+          time5[9] = d.getHours()+':'+date3M30SAgo.getMinutes()+':'+ date3M30SAgo.getSeconds(),'','',
+          time5[12] = d.getHours()+':'+date3MinutesAgo.getMinutes()+':'+ date3MinutesAgo.getSeconds(),'','',
+          time5[15] = d.getHours()+':'+date2M30SAgo.getMinutes()+':'+ date2M30SAgo.getSeconds(),'','',
+          time5[18] = d.getHours()+':'+date2MinutesAgo.getMinutes()+':'+ d.getSeconds(),'','',
+          time5[21] = d.getHours()+':'+date1M30SAgo.getMinutes()+':'+ date1M30SAgo.getSeconds(),'','',
+          time5[24] = d.getHours()+':'+date1MinuteAgo.getMinutes()+':'+ date1MinuteAgo.getSeconds(),'','',
+          time5[27] = d.getHours()+':'+d.getMinutes()+':'+ date30SecondsAgo.getSeconds(),'','',
+          time5[30] = d.getHours()+':'+d.getMinutes()+':'+ d.getSeconds();
+
+          time10[0] = d.getHours()+':'+date10MinutesAgo.getMinutes()+':'+ date10MinutesAgo.getSeconds(),'','',
+          time10[3] = d.getHours()+':'+date9M30SAgo.getMinutes()+':'+ date9M30SAgo.getSeconds(),'','',
+          time10[6] = d.getHours()+':'+date9MinutesAgo.getMinutes()+':'+ date9MinutesAgo.getSeconds(),'','',
+          time10[9] = d.getHours()+':'+date8M30SAgo.getMinutes()+':'+ date8M30SAgo.getSeconds(),'','',
+          time10[12] = d.getHours()+':'+date8MinutesAgo.getMinutes()+':'+ date8MinutesAgo.getSeconds(),'','',
+          time10[15] = d.getHours()+':'+date7M30SAgo.getMinutes()+':'+ date7M30SAgo.getSeconds(),'','',
+          time10[18] = d.getHours()+':'+date7MinutesAgo.getMinutes()+':'+ date7MinutesAgo.getSeconds(),'','',
+          time10[21] = d.getHours()+':'+date6M30SAgo.getMinutes()+':'+ date6M30SAgo.getSeconds(),'','',
+          time10[24] = d.getHours()+':'+date6MinutesAgo.getMinutes()+':'+ date6MinutesAgo.getSeconds(),'','',
+          time10[27] = d.getHours()+':'+date5M30SAgo.getMinutes()+':'+ date5M30SAgo.getSeconds(),'','',
+          time10[30] = d.getHours()+':'+date5MinutesAgo.getMinutes()+':'+ date5MinutesAgo.getSeconds(),'','',
+          time10[33] = d.getHours()+':'+date4M30SAgo.getMinutes()+':'+ date4M30SAgo.getSeconds(),'','',
+          time10[36] = d.getHours()+':'+date4MinutesAgo.getMinutes()+':'+ date4MinutesAgo.getSeconds(),'','',
+          time10[39] = d.getHours()+':'+date3M30SAgo.getMinutes()+':'+ date3M30SAgo.getSeconds(),'','',
+          time10[42] = d.getHours()+':'+date3MinutesAgo.getMinutes()+':'+ date3MinutesAgo.getSeconds(),'','',
+          time10[45] = d.getHours()+':'+date2M30SAgo.getMinutes()+':'+ date2M30SAgo.getSeconds(),'','',
+          time10[48] = d.getHours()+':'+date2MinutesAgo.getMinutes()+':'+ d.getSeconds(),'','',
+          time10[51] = d.getHours()+':'+date1M30SAgo.getMinutes()+':'+ date1M30SAgo.getSeconds(),'','',
+          time10[54] = d.getHours()+':'+date1MinuteAgo.getMinutes()+':'+ date1MinuteAgo.getSeconds(),'','',
+          time10[57] = d.getHours()+':'+d.getMinutes()+':'+ date30SecondsAgo.getSeconds(),'','',
+          time10[60] = d.getHours()+':'+d.getMinutes()+':'+ d.getSeconds();
+         
+
+        
+          var retirar = 60; // This variable defines the last index of the array of values. It's 60 values, so it's the 59 position
+          voltage1.shift(); //takes the first element out of the array
+          voltage1.splice(retirar,0,data.voltage); // puts a new element in position "retirar". 0 means it will not take replace any element
+          current1.shift();
+          current1.splice(retirar,0,data.current);
+          temperature1.shift();
+
+          voltage5.shift(); //takes the first element out of the array
+          voltage5.splice(retirar,0,data.voltage); // puts a new element in position "retirar". 0 means it will not take replace any element
+          current5.shift();
+          current5.splice(retirar,0,data.current);
+          temperature5.shift();
+          temperature5.splice(retirar,0,data.anode_temp);
+
+          voltage10.shift(); //takes the first element out of the array
+          voltage10.splice(retirar,0,data.voltage); // puts a new element in position "retirar". 0 means it will not take replace any element
+          current10.shift();
+          current10.splice(retirar,0,data.current);
+          temperature10.shift();
+          temperature10.splice(retirar,0,data.anode_temp);
+         
+        
+   
           myChart.update();
         });
-        }, 10000);
+        }, 2000);
       
       });
-    
-    
-    
-    
+  
     });
     
   } catch (error) {
