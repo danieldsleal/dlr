@@ -16,7 +16,7 @@
         $voltage = $_POST['voltage'];
         $current = $_POST['current'];
 
-        $values = array($voltage, $current, $anode_temp,$anode_temp,$latitude, $longitude);
+        $values = array($voltage, $current, $anode_temp,$cathode_temp,$latitude, $longitude);
 
         db();
         global $conn;
