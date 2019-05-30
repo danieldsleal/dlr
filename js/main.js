@@ -16,7 +16,7 @@
         voltage.reverse();
         current.reverse();
         temperature.reverse();
-        var period = 2000;
+        var period = 10000; //variable to choose the period of time to receive data
 
         let voltage1 = voltage.slice(54,61);
         let current1 = current.slice(54,61);
