@@ -2,7 +2,7 @@
 
 <?php
 
-    if(isset($_POST['voltage'])&& isset($_POST['current']) && isset($_POST['anode_temp']) && isset($_POST['cathode_temp'])){
+    if(isset($_POST['voltage'])&& isset($_POST['current']) && isset($_POST['anode_temp']){
 
         $query = "INSERT INTO cell(voltage,current,anode_temp,cathode_temp,latitude, longitude)
                     VALUES(?,?,?,?,?,?)";
@@ -12,7 +12,7 @@
         //$anode_temp = 80.01;
         //$cathode_temp = 79.8;
         $anode_temp = $_POST['anode_temp'];
-        $cathode_temp = $POST['cathode_temp'];
+        $cathode_temp = $_POST['cathode_temp'];
         $voltage = $_POST['voltage'];
         $current = $_POST['current'];
 
