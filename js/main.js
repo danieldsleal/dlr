@@ -16,6 +16,7 @@
         voltage.reverse();
         current.reverse();
         temperature.reverse();
+        var period = 2000;
 
         let voltage1 = voltage.slice(54,61);
         let current1 = current.slice(54,61);
@@ -355,6 +356,7 @@
           current1.shift();
           current1.splice(retirar,0,data.current);
           temperature1.shift();
+          temperature1.splice(retirar,0,data.anode_temp);
 
           voltage5.shift(); //takes the first element out of the array
           voltage5.splice(retirar,0,data.voltage); // puts a new element in position "retirar". 0 means it will not take replace any element
@@ -374,7 +376,7 @@
    
           myChart.update();
         });
-        }, 10000);
+        }, period);
       
       });
   
