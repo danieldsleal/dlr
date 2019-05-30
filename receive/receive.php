@@ -9,10 +9,10 @@
         
         $latitude = 48.748587; 
         $longitude =  9.101636;
-        //$anode_temp = 80.01;
-        //$cathode_temp = 79.8;
-        $anode_temp = $_POST['anode_temp'];
-        $cathode_temp = $POST['cathode_temp'];
+        $anode_temp = 80.01;
+        $cathode_temp = 79.8;
+        //$anode_temp = $_POST['anode_temp'];
+        //$cathode_temp = $POST['cathode_temp'];
         $voltage = $_POST['voltage'];
         $current = $_POST['current'];
 
