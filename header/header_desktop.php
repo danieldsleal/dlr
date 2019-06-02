@@ -23,6 +23,12 @@
                         </li>
                     
                         <li>
+                            <a href="/monitoring/">
+                            <i class="fas fa-chart-line"></i>
+                                <span class="bot-line"></span>Monitoring</a>
+                        </li>
+
+                        <li>
                             <a href="/performance/">
                             <i class="fas fa-chart-line"></i>
                                 <span class="bot-line"></span>Performance</a>

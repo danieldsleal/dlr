@@ -381,7 +381,142 @@
       });
   
     });
+  
+  var ctx2 = document.getElementById("polcurve");
+        if (ctx2) {
+          ctx2.height = 150;
+          var config = {
+            type: 'line',
+            data: {
+              labels: [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0],
+              defaultFontFamily: "Poppins",
+              
+              datasets: [
+                {
+                  label: "BoT",
+                  borderColor: 'rgb(168,168,168)',
+                  backgroundColor: 'rgb(168,168,168)',
+                  borderWidth: "2",
+                  fill: "false",
+                  yAxisID: "B",
+                  data: [932.5,888.5,868, 850, 837,826.5,787,763.5,741,702,661.5,610]
+                },
+                {
+                  label: "1st Period",
+                  borderColor: 'rgb(255,0,0)',
+                  backgroundColor: 'rgb(255,0,0)',
+                  borderWidth: "2",
+                  fill: "false",
+                  yAxisID: "B",
+                  data: [909.5,867.5,843.5, 825.5,810,798.5, 756, 726, 700, 648.5,571.5,475]
+                },
+                {
+                  label: "1st Refresh",
+                  borderColor: 'rgb(86, 142, 226)',
+                  backgroundColor: 'rgb(86, 142, 226)',
+                  borderWidth: "2",
+                  fill: "false",
+                  yAxisID: "B",
+                  data: [915.5,872.5,847,828,815.5,802.5,757.5,728,701,640.5,563.5,460]
+                
+                },
+                {
+                  label: "2nd Period",
+                  borderColor: 'rgb(35, 170, 47)',
+                  backgroundColor: 'rgb(35, 170, 47)',
+                  borderWidth: "2",
+                  fill: "false",
+                  yAxisID: "B",
+                  data: [895,847,823.5,805.5,790,777.5,729,691.5,652.5,564,440,265]
+                },
+                {
+                  label: "2nd Refresh",
+                  borderColor: 'rgb(118, 12, 142)',
+                  backgroundColor: 'rgb(118, 12, 142)',
+                  borderWidth: "2",
+                  fill: "false",
+                  yAxisID: "B",
+                  data: [898.5,849.5,823,803.5,790.5,778.5,729,689.5,650,556.5,430,240]
+                },
+                {
+                  label: "3rd Period",
+                  borderColor: 'rgb(142, 131, 12)',
+                  backgroundColor: 'rgb(142, 131, 12)',
+                  borderWidth: "2",
+                  fill: "false",
+                  yAxisID: "B",
+                  data: [781.5,767,755,744,731,719,657,609,553,403,161.5]
+                },
+                {
+                  label: "EoT",
+                  borderColor: 'rgb(18, 153, 148)',
+                  backgroundColor: 'rgb(18, 153, 148)',
+                  borderWidth: "2",
+                  fill: "false",
+                  yAxisID: "B",
+                  data: [780,765.5,751.5,738,727.5,714,643.5,600,548.5,404.5,141.5]
+                }
+              ]
+            },
+
+            options: {
+              scales: {
+                yAxes: [{
+                  id: "B",
+                  type: "linear",
+                  position: "left",
+                  scaleLabel: {
+                    labelString: "Cell Voltage / mV",
+                    display: true,
+                    fontStyle: 'bold',
+                    fontSize : 20,
+                  },
+                  ticks: {
+                    max: 1000,
+                    min: 0,
+                    fontSize: 12
+                  }
+                }],
+              xAxes: [{
+                scaleLabel : {
+                  display: true,
+                  labelString: "Current density / A cm-2",
+                  fontStyle: "bold",
+                  fontSize: 20
+                }
+              }]
+              },
+              legend: {
+                position: "bottom",
+                labels: {
+                  fontFamily: "Poppins" 
+                }
     
+              },
+              title: {
+                display: true,
+                text: 'Polarization Curve for the Fuel Cell Dynamic Driving Cycle',
+                fontSize: 20
+              },
+              maintainAspectRatio: true,
+              responsive: true,
+              tooltips: {
+                mode: 'index',
+                intersect: false
+              },
+              hover: {
+                mode: 'nearest',
+                intersect: true
+              },
+              elements: { 
+                line: {
+                    tension: 0 // Draw straightline instead of a curve
+                }
+              },
+            },
+          }
+        }
+        var myChart = new Chart(ctx2,config);
   } catch (error) {
     console.log(error);
   }

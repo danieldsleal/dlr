@@ -5,9 +5,12 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="description" content="Page for the Fuel Cell Cargo Pedelec Project">
+    <meta name="author" content="Daniel Leal">
+
     <!-- Title Page-->
-    <title>Fuel Cell Monitoring</title>
+    
+    <title>Performance</title>
 
     <!-- Fontfaces CSS-->
     <link href="../css/font-face.css" rel="stylesheet" media="all">
@@ -29,12 +32,10 @@
 
     <!-- Main CSS-->
     <link href="../css/theme.css" rel="stylesheet" media="all">
-    <!-- Jquery shit!!!!!-->
-    <script src="/jquery/jquery.js"></script>
 
-</head>
 
 <!-- Include header for desktop and mobile -->
+
 <?php include '../database/database.php';
 
 session_start();
@@ -49,7 +50,14 @@ session_start();
       
                
                    
-                        <canvas id="polcurve" width="450" height="600"></canvas>
+                        <canvas id="fuelcell" width="400" height="400"></canvas>
+                        <center>
+                            <input id="1minute" type="button" class="btn btn-secondary btn-sm" value="1 minute" onclick="doFunction();" /> 
+                            <input id="5minutes" type="button" class="btn btn-secondary btn-sm" value="5 minutes" onclick="doFunction();" /> 
+                            <input id="10minutes" type="button" class="btn btn-secondary btn-sm" value="10 minutes" onclick="doFunction();" /> 
+                        </center>
+                        
+            
 
         </section>
     </div>
@@ -57,34 +65,32 @@ session_start();
 </body>
 
 
-</body>
-            <!-- END STATISTIC-->
-       
+<!-- Jquery JS-->
+<script src="../vendor/jquery-3.2.1.min.js"></script>
+<script src="../jquery/jquery.js"></script>
+  <!-- Bootstrap JS-->
+<script src="../vendor/bootstrap-4.1/popper.min.js"></script>
+<script src="../vendor/bootstrap-4.1/bootstrap.min.js"></script>
+<!-- Vendor JS       -->
+<script src="../vendor/slick/slick.min.js">
+</script>
+<script src="../vendor/wow/wow.min.js"></script>
+<script src="../vendor/animsition/animsition.min.js"></script>
+<script src="../vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+</script>
+<script src="../vendor/counter-up/jquery.waypoints.min.js"></script>
+<script src="../vendor/counter-up/jquery.counterup.min.js">
+</script>
+<script src="../vendor/circle-progress/circle-progress.min.js"></script>
+<script src="../vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="../vendor/chartjs/Chart.bundle.min.js"></script>
+<script src="../vendor/select2/select2.min.js">
+</script>
 
-    <!-- Jquery JS-->   
-    <!-- Bootstrap JS-->
-    <script src="../vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="../vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    <!-- Vendor JS       -->
-    <script src="../vendor/slick/slick.min.js">
-    </script>
-    <script src="../vendor/wow/wow.min.js"></script>
-    <script src="../vendor/animsition/animsition.min.js"></script>
-    <script src="../vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
-    <script src="../vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="../vendor/counter-up/jquery.counterup.min.js">
-    </script>
-    <script src="../vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="../vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="../vendor/select2/select2.min.js">
-    </script>
-
-    <!-- Main JS-->
-    <script src="../js/main.js"></script>
+<!-- Main JS-->
+<script src="../js/main.js"></script>
    
-</body>
+
 
 </html>
 <!-- end document-->
