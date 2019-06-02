@@ -54,7 +54,6 @@ session_start();
                 $("#current").html(data.current + " " + "A");
                 $("#anode_temp").html(data.anode_temp + " " + "ºC");
                 $("#cathode_temp").html(data.cathode_temp + " " + "ºC");
-                $latitude = parseFLoat(data.latitude);
                 }
             )};
     

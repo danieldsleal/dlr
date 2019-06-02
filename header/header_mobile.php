@@ -27,15 +27,15 @@
                                     <i class="fas fa-motorcycle"></i>Real Data</a>
                             </li>
                             <li>
-                                <a href="/performance.php">
+                                <a href="/performance/">
                                     <i class="fas fa-chart-bar"></i>Performance</a>
                             </li>
                             <li>
-                                <a href="/about/index.php">
+                                <a href="/about/">
                                     <i class="fas fa-table"></i>About</a>
                             </li>
                             <li>
-                                <a href="/faq.php">
+                                <a href="/faq/">
                                     <i class="fas fa-table"></i>FAQ</a>
                             </li>
                         </ul>
@@ -104,11 +104,11 @@
                     
                                 <div class="account-dropdown__body">
                                     <div class="account-dropdown__item">
-                                        <a href="login/index.php">
+                                        <a href="/login/">
                                             <i class="zmdi zmdi-account"></i>Login</a>
                                     </div>
                                     <div class="account-dropdown__item">
-                                        <a href="register/index.php">
+                                        <a href="/register/">
                                             <i class="zmdi zmdi-account"></i>Register</a>
                                     </div>
                         

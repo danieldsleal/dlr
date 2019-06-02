@@ -36,7 +36,7 @@
 <!-- Include header for desktop and mobile -->
 <?php
     
-    include_once 'login/session.php'; 
+    include_once "login/session.php";
     include 'header/header_desktop.php' ;
        
     include 'header/header_mobile.php' ; 

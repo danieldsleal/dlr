@@ -1,3 +1,4 @@
+
 <?php $user_data = user_data_db(); ?>
 
 <header class="header-desktop3 d-none d-lg-block">
@@ -15,26 +16,26 @@
                 <div class="header__navbar">
                     <ul class="list-unstyled">
                         <li class="has-sub">
-                            <a href="/realdata/index.php">
+                            <a href="/realdata/">
                                 <i class="fas fa-motorcycle"></i>Real Data
                                 <span class="bot-line"></span>
                             </a>
                         </li>
                     
                         <li>
-                            <a href="/performance.php">
+                            <a href="/performance/">
                             <i class="fas fa-chart-line"></i>
                                 <span class="bot-line"></span>Performance</a>
                         </li>
 
                         <li>
-                            <a href="/about/index.php">
+                            <a href="/about/">
                             <i class="fas fa-question"></i>
                             <span class="bot-line"></span>About</a>
                         </li>
                     
                         <li class="has-sub">
-                            <a href="/faq.php">
+                            <a href="/faq/">
                                 <i class="fas fa-question"></i>
                                 <span class="bot-line"></span>FAQ</a>
                         </li>
@@ -96,12 +97,12 @@
                         
                         <div class="account-dropdown__body">
                             <div class="account-dropdown__item">
-                                <a href="login/index.php">
+                                <a href="/login/">
                                     <i class="zmdi zmdi-account"></i>Login</a>
                             </div>
 
                             <div class="account-dropdown__item">
-                                <a href="register/index.php">
+                                <a href="/register/">
                                     <i class="zmdi zmdi-account"></i>Register</a>
                             </div>
                             

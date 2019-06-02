@@ -4,19 +4,14 @@
 <?php
     function verifica_login($username, $password){
         global $conn;
-
         if (!isset($conn)){
             db();
         }
-
         return check_login_db($username, $password);
     }
-
     session_start();
-
     if (isset($_POST["fusername"]) && isset($_POST["fpassword"]) ){
         $id = verifica_login($_POST["fusername"], $_POST["fpassword"]);
-
         $_SESSION["user_id"] = $id;
         echo $_SESSION["user_id"];
         //echo($id);
@@ -24,7 +19,6 @@
             $message = array('status' => 'ok');
            
         }
-
 	    else {
             $message = array('status' => 'not_ok');
             header("location: /index.php");
@@ -41,5 +35,4 @@
     
   
    
-
 ?>
