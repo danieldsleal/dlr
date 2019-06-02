@@ -385,7 +385,7 @@
   var ctx2 = document.getElementById("polcurve");
         if (ctx2) {
           ctx2.height = 150;
-          var config = {
+          var config2 = {
             type: 'line',
             data: {
               labels: [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0],
@@ -516,7 +516,8 @@
             },
           }
         }
-        var myChart = new Chart(ctx2,config);
+        var myChart2 = new Chart(ctx2,config2);
+
   } catch (error) {
     console.log(error);
   }
