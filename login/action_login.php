@@ -27,7 +27,7 @@
     
     if(isset($_SESSION['user_id'])) {
         //echo "Your session is running " . $_SESSION['user_id'];
-        header("location: /realdata/index.php");
+        header("location: ../realdata/index.php");
       }
     
     //echo json_encode($message);
