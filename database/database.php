@@ -1,8 +1,8 @@
 ﻿<?php
 	function db(){
 		$servername = "fcrex.mysql.database.azure.com";
-		$username = "daniel@fcrex";
-		$password = "Ahzoo4wi";
+		$username = "fcrex@fcrex";
+		$password = "Ahzoo4wi*";
 		global $conn;
 
 		// Create connection
