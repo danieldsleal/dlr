@@ -13,7 +13,7 @@
     if (isset($_POST["fusername"]) && isset($_POST["fpassword"]) ){
         $id = verifica_login($_POST["fusername"], $_POST["fpassword"]);
         $_SESSION["user_id"] = $id;
-        echo $_SESSION["user_id"];
+        //echo $_SESSION["user_id"];
         //echo($id);
         if ($id != NULL) {
             $message = array('status' => 'ok');
@@ -27,7 +27,7 @@
     
     if(isset($_SESSION['user_id'])) {
         echo "Your session is running " . $_SESSION['user_id'];
-        header("location: ../realdata/");
+        header("location: /realdata/");
       }
     
     //echo json_encode($message);
