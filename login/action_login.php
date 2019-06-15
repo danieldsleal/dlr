@@ -22,6 +22,7 @@
 	    else {
             $message = array('status' => 'not_ok');
             header("location: /index.php");
+            echo "ok";
         }
     }
     
