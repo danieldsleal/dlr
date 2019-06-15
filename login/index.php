@@ -46,7 +46,7 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form name="myForm" action="action_login.php" method="post" onsubmit= "Login()" >
+                            <form name="myForm" action="action_login.php" method="post" >
                                 <div class="form-group">
                                     <label>Username</label>
                                     <input class="au-input au-input--full" type="text" name="fusername" placeholder="Username" required>
