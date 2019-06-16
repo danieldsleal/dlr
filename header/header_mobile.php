@@ -27,10 +27,6 @@
                                     <i class="fas fa-motorcycle"></i>Real Data</a>
                             </li>
                             <li>
-                                <a href="/performance/">
-                                    <i class="fas fa-chart-bar"></i>Performance</a>
-                            </li>
-                            <li>
                                 <a href="/about/">
                                     <i class="fas fa-table"></i>About</a>
                             </li>
@@ -52,7 +48,7 @@
                             <img src="/images/icon/daniel.jpg" alt="John Doe" />
                         </div>
                         <div class="content">
-                            <a class="js-acc-btn" href="#"><?=$user_data['complete_name']?></a>
+                            <a class="js-acc-btn" color=#000000; href="#"><?=$user_data['complete_name']?></a>
                         </div>
                         <div class="account-dropdown js-dropdown">
                             <div class="info clearfix">

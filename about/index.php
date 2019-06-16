@@ -47,6 +47,8 @@ session_start();
 
     <section class="p-t-60 p-b-20">
         <div class="container">
+            <h2 style="padding-left: 2% ; text-transform: uppercase ; color: #555 !important ; font-weight: 600"> About me </h2>
+            <br>
             <div class="row">
                 <div class="col-md-12">
                 <p style="text-align: justify ; padding-left: 2% ; padding-right: 2%">
@@ -70,25 +72,17 @@ session_start();
             </div>
     </div>
     </section>
-    <br>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg">
+    <div class="logos">
+    
+    <center>
+        <img src="/images/dlr.png" class="rounded" width= 350vw height= 10vh  padding-left= 10% > &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <img src="/images/feup.png" class="rounded" width= 270vw>
+    
+    </center>
 
-            </div>
-            <div class="col-lg">
-            <img class="thumbnail img-responsive" src="../images/dlr.png" width= 100%>
-            </div>
-            <div class="col-lg">
-            <img src="../images/feup.png" class="rounded" width= 80%>
-            </div>
-            <div class="col-lg">
-            </div>
-            
-      
-        </div>
-    </div>
+   
+
+</div>
 <!-- COPYRIGHT-->
     <section class="p-t-60 p-b-20">
         <div class="container">
