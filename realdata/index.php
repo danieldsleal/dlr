@@ -107,7 +107,7 @@ session_start();
     </section> 
             
 
-    <div class="row">
+    <div class="rowmapa">
         <div class="col-md-1 "></div>
         <div class="col-md-10">
             <div id="map" style="height:50vh;"></div>

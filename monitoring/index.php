@@ -51,6 +51,7 @@ session_start();
                
                    
                         <canvas id="fuelcell" width="400vh" height="400vh"></canvas>
+                        <br>
                         <center>
                             <input id="1minute" type="button" class="btn btn-secondary btn-sm" value="1 minute" onclick="doFunction();" /> 
                             <input id="5minutes" type="button" class="btn btn-secondary btn-sm" value="5 minutes" onclick="doFunction();" /> 

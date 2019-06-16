@@ -49,7 +49,7 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                <p style="text-align: justify ; padding-left: 5% ; padding-right: 5%">
+                <p style="text-align: justify ; padding-left: 2% ; padding-right: 2%">
                     The goal of this master thesis is to analyze different load cycles that 
                     simulate real driving profiles and study the performance and degradation 
                     of the cell along time. To study this, Ex-Situ and In-situ characterization 
