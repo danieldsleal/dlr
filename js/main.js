@@ -445,7 +445,7 @@
                   label: "Begin of Test",
                   borderColor: 'rgb(168,168,168)',
                   backgroundColor: 'rgb(168,168,168)',
-                  borderWidth: "2",
+                  borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
                   data: [932.5,888.5,868, 850, 837,826.5,787,763.5,741,702,661.5,610]
@@ -454,7 +454,7 @@
                   label: "1st Period",
                   borderColor: 'rgb(255,0,0)',
                   backgroundColor: 'rgb(255,0,0)',
-                  borderWidth: "2",
+                  borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
                   data: [909.5,867.5,843.5, 825.5,810,798.5, 756, 726, 700, 648.5,571.5,475]
@@ -463,7 +463,7 @@
                   label: "1st Refresh",
                   borderColor: 'rgb(86, 142, 226)',
                   backgroundColor: 'rgb(86, 142, 226)',
-                  borderWidth: "2",
+                  borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
                   data: [915.5,872.5,847,828,815.5,802.5,757.5,728,701,640.5,563.5,460]
@@ -473,7 +473,7 @@
                   label: "2nd Period",
                   borderColor: 'rgb(35, 170, 47)',
                   backgroundColor: 'rgb(35, 170, 47)',
-                  borderWidth: "2",
+                  borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
                   data: [895,847,823.5,805.5,790,777.5,729,691.5,652.5,564,440,265]
@@ -482,7 +482,7 @@
                   label: "2nd Refresh",
                   borderColor: 'rgb(118, 12, 142)',
                   backgroundColor: 'rgb(118, 12, 142)',
-                  borderWidth: "2",
+                  borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
                   data: [898.5,849.5,823,803.5,790.5,778.5,729,689.5,650,556.5,430,240]
@@ -491,7 +491,7 @@
                   label: "3rd Period",
                   borderColor: 'rgb(142, 131, 12)',
                   backgroundColor: 'rgb(142, 131, 12)',
-                  borderWidth: "2",
+                  borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
                   data: [781.5,767,755,744,731,719,657,609,553,403,161.5]
@@ -500,7 +500,7 @@
                   label: "End of Test",
                   borderColor: 'rgb(18, 153, 148)',
                   backgroundColor: 'rgb(18, 153, 148)',
-                  borderWidth: "2",
+                  borderWidth: "3",
                   fill: "false",
                   yAxisID: "B",
                   data: [780,765.5,751.5,738,727.5,714,643.5,600,548.5,404.5,141]
