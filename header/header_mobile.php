@@ -43,7 +43,7 @@
         <div class="sub-header-mobile-2 d-block d-lg-none">
             <div class="header__tool">
                 <div class="account-wrap">
-                    <div class="account-item account-item--style2 clearfix js-item-menu">
+                    <div class="account-item account-item--style clearfix js-item-menu">
                         <div class="image">
                             <img src="/images/icon/daniel.jpg" alt="John Doe" />
                         </div>
@@ -89,7 +89,7 @@
         <!-- sem login -->    
 
         <?php if($_SESSION['user_id'] == NULL) { ?>
-            <div class="sub-header-mobile-2 d-block d-lg-none">
+            <div class="sub-header-mobile d-block d-lg-none">
                 <div class="header__tool">
                     <div class="account-wrap">
                         <div class="account-item account-item--style2 clearfix js-item-menu">
