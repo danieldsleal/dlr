@@ -45,26 +45,33 @@ session_start();
 
 <body class="animsition">
     
-  <!-- Collapse buttons -->
-<div>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-    aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
-  </button>
-</div>
-<!-- / Collapse buttons -->
-
-<!-- Collapsible element -->
-<div class="collapse" id="collapseExample">
-  <div class="mt-3">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
-    keffiyeh helvetica,
-    craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
+<section class="p-t-60 p-b-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 30px ; padding-right: 30px">
+                    What is a fuel cell?
+                    <br>
+                </p>
+                <p style="text-align: justify ; padding-left: 65px ; padding-right: 65px">
+                A fuel cell is an electrochemical system that converts chemical energy of fuel into electrical energy without fuel combustion.
+                </p>
+                <br>
+                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 30px ; padding-right: 65px">
+                    What is a Polarization Curve?
+                    <br>
+                </p>
+                <p style="text-align: justify ; padding-left: 65px ; padding-right: 65px">
+                Polarization Curves is a type of electrochemical characterization that allow to asses the performance 
+                of the cell at different current densities in the different operation regions. The curves were recorded during
+                the tests to understand the progress of degrdation of the cell.
+                </p>
+                    <br>
+                
+                 </div>
+            </div>
+    </div>
+    </section>
 
   
 

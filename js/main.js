@@ -381,6 +381,55 @@
       });
   
     });
+
+    var fcbot = [932.5,888.5,868, 850, 837,826.5,787,763.5,741,702,661.5,610];
+    var fcperiod1 = [909.5,867.5,843.5, 825.5,810,798.5, 756, 726, 700, 648.5,571.5,475];
+    var fcrefresh1 = [915.5,872.5,847,828,815.5,802.5,757.5,728,701,640.5,563.5,460];
+    var fcperiod2 = [895,847,823.5,805.5,790,777.5,729,691.5,652.5,564,440,265];
+    var fcrefresh2 =  [898.5,849.5,823,803.5,790.5,778.5,729,689.5,650,556.5,430,240];
+    var fcperiod3 = [781.5,767,755,744,731,719,657,609,553,403,161.5];
+    var fceot = [780,765.5,751.5,738,727.5,714,643.5,600,548.5,404.5,141];
+
+    var wltpbot = [918,874,852.5,837,824,813,770.5,746,724,683.5,642.5,600];
+    var wltpperiod1 = [899,853.5,831,813.5,801.5,791.5,748,720,693.5,641.5, 583.5, 515];
+    var wltprefresh1 = [905,858.5,835,818,804,793,748,717.5,690.5,639.5,583.5,518];
+    var wltpperiod2 = [892,842.5,817.5,801,787,776.5,730.5,692,654.5,580,495,400];
+    var wltprefresh2 = [894,846.5,822,804,790.5,778.5,733,696.5,661.5,594.5,511.5,422];
+    var wltpperiod3 = [886,832.5,806,787.5,774,761.5,701.5,655,605.5,493.5,360,186];
+    var wltpeot = [885,830,805.5,786.5,769,755.5,697.5,645,599.5,506,382.5,202];
+
+
+
+    document.getElementById("FC-DLC").onclick = function(){
+      var data = myChart2.config.data;
+      
+      data.datasets[0].data = fcbot;
+      data.datasets[1].data = fcperiod1;
+      data.datasets[2].data = fcrefresh1;
+      data.datasets[3].data = fcperiod2;
+      data.datasets[4].data = fcrefresh2;
+      data.datasets[5].data = fcperiod3;
+      data.datasets[6].data = fceot;
+      myChart2.options.title.text = "Polarization Curve for the Fuel Cell Dynamic Driving Cycle";
+      myChart2.update();
+      
+    }
+
+    document.getElementById("WLTP").onclick = function(){
+      var data = myChart2.config.data;
+      
+      data.datasets[0].data = wltpbot;
+      data.datasets[1].data = wltpperiod1;
+      data.datasets[2].data = wltprefresh1;
+      data.datasets[3].data = wltpperiod2;
+      data.datasets[4].data = wltprefresh2;
+      data.datasets[5].data = wltpperiod3;
+      data.datasets[6].data = wltpeot;
+      myChart2.options.title.text = "Polarization Curve for Worlwide Harmonized Ligh Vehicle Test Procedure";
+      myChart2.update();
+    }
+
+
   
   var ctx2 = document.getElementById("polcurve");
         if (ctx2) {
@@ -393,7 +442,7 @@
               
               datasets: [
                 {
-                  label: "BoT",
+                  label: "Begin of Test",
                   borderColor: 'rgb(168,168,168)',
                   backgroundColor: 'rgb(168,168,168)',
                   borderWidth: "2",
@@ -448,7 +497,7 @@
                   data: [781.5,767,755,744,731,719,657,609,553,403,161.5]
                 },
                 {
-                  label: "EoT",
+                  label: "End of Test",
                   borderColor: 'rgb(18, 153, 148)',
                   backgroundColor: 'rgb(18, 153, 148)',
                   borderWidth: "2",
@@ -466,7 +515,7 @@
                   type: "linear",
                   position: "left",
                   scaleLabel: {
-                    labelString: "Cell Voltage / mV",
+                    labelString: "Cell Voltage [mV]",
                     display: true,
                     fontStyle: 'bold',
                     fontSize : 20,
@@ -480,7 +529,7 @@
               xAxes: [{
                 scaleLabel : {
                   display: true,
-                  labelString: "Current density / A cm-2",
+                  labelString: "Current density [A/cm2]",
                   fontStyle: "bold",
                   fontSize: 20
                 }
@@ -518,10 +567,15 @@
         }
         var myChart2 = new Chart(ctx2,config2);
 
+       
+        
+      
   } catch (error) {
-    console.log(error);
+  console.log(error);
   }
 
+
+  
   
  
 })(jQuery);

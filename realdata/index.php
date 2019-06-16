@@ -108,11 +108,11 @@ session_start();
             
 
     <div class="row">
-        <div class="col-md-1"></div>
+        <div class="col-md-1 "></div>
         <div class="col-md-10">
-            <div id="map" style="width:100%;height:350px;"></div>
+            <div id="map" style="height:50vh;"></div>
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-md-1 "></div>
     </div>
     
     <script>

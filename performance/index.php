@@ -46,11 +46,20 @@ session_start();
 <?php if (isset($_SESSION["user_id"])) { ?>
     <div class="page-wrapper">
         <section class="p-t-60 p-b-20">
-      
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
                
                    
-                        <canvas id="polcurve" width="450" height="600"></canvas>
-
+                        <canvas id="polcurve" width="350vh" height="600vh"></canvas>
+                        <br>
+                        <center>
+                            <input id="FC-DLC" type="button" class="btn btn-secondary btn-sm" value="Fuel Cell Dynamic Driving Cycle" onclick="doFunction();" /> 
+                            <input id="WLTP" type="button" class="btn btn-secondary btn-sm" value="Wolrdwide Harmonized Light Vehicle Cycle" onclick="doFunction();" /> 
+                        </center>
+                        </div>
+                    </div>
+                </div>
         </section>
     </div>
     <?php } ?>
