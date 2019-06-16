@@ -49,19 +49,19 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 30px ; padding-right: 30px">
+                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 2% ; padding-right: 5%">
                     What is a fuel cell?
                     <br>
                 </p>
-                <p style="text-align: justify ; padding-left: 65px ; padding-right: 65px">
+                <p style="text-align: justify ; padding-left: 5% ; padding-right: 5%">
                 A fuel cell is an electrochemical system that converts chemical energy of fuel into electrical energy without fuel combustion.
                 </p>
                 <br>
-                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 30px ; padding-right: 65px">
+                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 2% ; padding-right: 5%">
                     What is a Polarization Curve?
                     <br>
                 </p>
-                <p style="text-align: justify ; padding-left: 65px ; padding-right: 65px">
+                <p style="text-align: justify ; padding-left:5% ; padding-right: 5%">
                 Polarization Curves is a type of electrochemical characterization that allow to asses the performance 
                 of the cell at different current densities in the different operation regions. The curves were recorded during
                 the tests to understand the progress of degrdation of the cell.
