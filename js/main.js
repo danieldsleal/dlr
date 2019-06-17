@@ -425,7 +425,7 @@
       data.datasets[4].data = wltprefresh2;
       data.datasets[5].data = wltpperiod3;
       data.datasets[6].data = wltpeot;
-      myChart2.options.title.text = "Polarization Curve for Worlwide Harmonized Ligh Vehicle Test Procedure";
+      myChart2.options.title.text = "Polarization Curve for Worldwide Harmonized Light Vehicle Test Procedure";
       myChart2.update();
     }
 
