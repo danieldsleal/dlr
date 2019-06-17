@@ -55,7 +55,7 @@ session_start();
                         <br>
                         <center>
                             <input id="FC-DLC" type="button" class="btn btn-secondary btn-sm" value="Fuel Cell Dynamic Driving Cycle" onclick="doFunction();" /> 
-                            <input id="WLTP" type="button" class="btn btn-secondary btn-sm" value="Wolrdwide Harmonized Light Vehicle Cycle" onclick="doFunction();" /> 
+                            <input id="WLTP" type="button" class="btn btn-secondary btn-sm" value="Worldwide Harmonized Light Vehicle Cycle" onclick="doFunction();" /> 
                         </center>
                         </div>
                     </div>
