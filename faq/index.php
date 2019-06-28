@@ -58,6 +58,15 @@ session_start();
                 </p>
                 <br>
                 <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 2% ; padding-right: 5%">
+                    How is the data being recorded?
+                    <br>
+                </p>
+                <p style="text-align: justify ; padding-left:5% ; padding-right: 5%">
+                There is a data acquision unit connect to the fuel cell test bench that records the data and sends it over a HTTP POST request
+                to the server and then the server displays the information. 
+                </p>
+                    <br>
+                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 2% ; padding-right: 5%">
                     What is a Polarization Curve?
                     <br>
                 </p>
@@ -67,7 +76,26 @@ session_start();
                 the tests to understand the progress of degrdation of the cell.
                 </p>
                     <br>
-                
+                    <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 2% ; padding-right: 5%">
+                    What is the Fuel Cell Dynamic Load Cycle?
+                    <br>
+                </p>
+                <p style="text-align: justify ; padding-left:5% ; padding-right: 5%">
+                The Fuel Cell Dynamic Load Cycle is driving cycle based on the New European Driving Cycle (NEDC). The NEDC is divided into two sections: 
+                Urban driving cycle and Extra Urban driving cycle. The first section is composed by four cycles of 
+                low speed (urban driving), each one with a period of 195 seconds, and the second section is an highway 
+                cycle with a duration of 400 seconds.
+                </p>
+                <br>
+                <p style="text-align: justify ; font-weight: bold; font-size: 18px; padding-left: 2% ; padding-right: 5%">
+                    What is the Worlwide Harmonized Light Vehicle Test Procedure?
+                    <br>
+                </p>
+                <p style="text-align: justify ; padding-left:5% ; padding-right: 5%">
+                The WLTP is a driving cycle which has three different vehicle classes based on the power/mass relation and the cargo pedelec fits in the class 1 group. The driving 
+                cycle for this group is divided in two parts: low average speed and medium average speed. Each part has stops, accelerations and braking phases. 
+                </p>
+                <br>
                  </div>
             </div>
     </div>
