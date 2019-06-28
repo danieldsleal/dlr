@@ -21,14 +21,14 @@
         }
 	    else {
             $message = array('status' => 'not_ok');
-            header("location: /index.php");
+            header("location: /");
             echo "ok";
         }
     }
     
     if(isset($_SESSION['user_id'])) {
         //echo "Your session is running " . $_SESSION['user_id'];
-        header("location: ../realdata/index.php");
+        header("location: ../realdata/");
       }
     
     //echo json_encode($message);

@@ -17,7 +17,7 @@
                     <ul class="list-unstyled">
                         <li class="has-sub">
                             <a href="/realdata/">
-                                <i class="fas fa-motorcycle"></i>Real Data
+                                <i class="fas fa-motorcycle"></i>Real-Time Data
                                 <span class="bot-line"></span>
                             </a>
                         </li>
